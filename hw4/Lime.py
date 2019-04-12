@@ -72,7 +72,9 @@ def plot_lime(path, X_train, Y_train):
                                 )
 
         # save the image
-        plt.imsave('%sfig3_%d.jpg' % (path, i), image)
+        fig, ax = plt.subplots()
+        ax = ax.imshow(image)
+        fig.savefig('%sfig3_%d.jpg' % (path, i))
 
 if __name__ == '__main__':
     train_path = sys.argv[1]
