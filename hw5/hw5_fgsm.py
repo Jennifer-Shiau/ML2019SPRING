@@ -42,7 +42,7 @@ def load_data(label_path):
 
     label = data[:, 3]
     # label.shape = (200,)
-    np.save('label.npy', label)
+    # np.save('label.npy', label)
 
     return label
 
@@ -89,8 +89,8 @@ def train(train_loader, model, output_dir):
             imsave(fn, img)
     
 if __name__ == '__main__':
-    # label = load_data('labels.csv')
-    label = np.load('label.npy')
+    label = load_data('labels.csv')
+    # label = np.load('label.npy')
     
     use_cuda = torch.cuda.is_available()
     torch.manual_seed(123564)
