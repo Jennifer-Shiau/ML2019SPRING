@@ -17,7 +17,7 @@ def load_data(img_dir):
 def mean_face(X):
     mu = np.mean(X, axis=0)
     meanface = mu.reshape(600, 600, 3).astype(np.uint8)
-    imsave('pca/mean.jpg', meanface)
+    # imsave('pca/mean.jpg', meanface)
 
     return mu
 
