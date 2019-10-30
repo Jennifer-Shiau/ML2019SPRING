@@ -170,6 +170,6 @@ bash hw8_train.sh <training_data>
 |            | Public   | Private  |
 | :--------: | :------: | :------: |
 | Accuracy   | 0.64363  | 0.62803  |
+
 **Model size: 205446 Bytes**
 <br/>
-
